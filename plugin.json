@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "epub-create",
+  "version": "0.1.0",
+  "description": "Create, refine and validate EPUBs with editorial fidelity and an Amazon KDP preparation profile.",
+  "author": {"name": "SanNw", "url": "https://github.com/SanNw"},
+  "homepage": "https://github.com/SanNw/EPUB-Create",
+  "repository": "https://github.com/SanNw/EPUB-Create",
+  "license": "MIT",
+  "keywords": ["epub", "ebook", "editorial", "kdp", "accessibility"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "EPUB-Create",
+        "shortDescription": "Create and validate faithful EPUB ebooks",
+        "developerName": "SanNw",
+        "category": "Productivity",
+        "defaultPrompt": ["Use EPUB-Create to create or refine this EPUB using the approved manuscript and the selected publishing profile."]
+      }
+    }
+  }
+}

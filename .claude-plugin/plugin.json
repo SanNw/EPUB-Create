@@ -1,0 +1,10 @@
+{
+  "name": "epub-create",
+  "version": "0.1.0",
+  "description": "Create and refine EPUBs with researched editorial rules and Amazon KDP preparation.",
+  "author": {"name": "SanNw", "url": "https://github.com/SanNw"},
+  "homepage": "https://github.com/SanNw/EPUB-Create",
+  "repository": "https://github.com/SanNw/EPUB-Create",
+  "license": "MIT",
+  "keywords": ["epub", "ebook", "kdp", "editorial"]
+}

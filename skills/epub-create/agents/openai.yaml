@@ -1,0 +1,4 @@
+interface:
+  display_name: "EPUB-Create"
+  short_description: "Cria e valida EPUBs com fidelidade editorial"
+  default_prompt: "Use $epub-create para criar ou refinar este EPUB, preservar o texto aprovado e verificar os requisitos do destino informado."

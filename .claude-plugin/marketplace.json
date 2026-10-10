@@ -1,0 +1,12 @@
+{
+  "name": "epub-create",
+  "owner": {"name": "SanNw"},
+  "plugins": [
+    {
+      "name": "epub-create",
+      "source": "./",
+      "description": "Create, refine and validate EPUB ebooks with editorial fidelity.",
+      "version": "0.1.0"
+    }
+  ]
+}

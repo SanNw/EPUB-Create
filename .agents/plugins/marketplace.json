@@ -1,0 +1,11 @@
+{
+  "name": "epub-create-local",
+  "plugins": [
+    {
+      "name": "epub-create",
+      "source": {"source": "local", "path": "./"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Productivity"
+    }
+  ]
+}
