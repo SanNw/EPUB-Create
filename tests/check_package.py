@@ -6,6 +6,7 @@ import json
 import re
 import tempfile
 import zipfile
+from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / 'skills/epub-create'
@@ -35,6 +36,10 @@ def main():
         for href in re.findall(r'\]\(([^)]+)\)',file.read_text()):
             if not href.startswith(('https://','http://','#')):
                 assert (file.parent/href.split('#')[0]).exists(), (file,href)
+    for file in (ROOT/'assets/badges').glob('*.svg'):
+        svg = ET.fromstring(file.read_text())
+        assert svg.find('{http://www.w3.org/2000/svg}title') is not None, file
+        assert svg.get('role') == 'img' and svg.get('viewBox'), file
     for file in SKILL.rglob('*.py'):
         ast.parse(file.read_text(),filename=str(file))
     for file in ROOT.rglob('*'):
