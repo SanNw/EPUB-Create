@@ -1,5 +1,6 @@
 {
   "name": "epub-create",
+  "description": "Editorial EPUB creation, validation and Amazon KDP preparation tools.",
   "owner": {"name": "SanNw"},
   "plugins": [
     {
